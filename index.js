@@ -1,10 +1,11 @@
 var recipes = {}
 
 function updateObjectWithKeyAndValue(object, key, value) {
+  var newObj = object.assign({},object,{[key]: value});
   if (object[key] = value) {
     return object;
-  } else if (object.assign({},object,{[key]: value}))
-return object;
+  } else if (newObj)
+return newObj;
 
 }
 
